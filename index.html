@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>BTVN_Bc60_Js</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <!-- main css  -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <!-- place navbar here -->
+  </header>
+  <main>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header text-success text-center">KÊ KHAI TỪ THIỆN</div>
+              <div class="card-body">
+                <div class="form-group">
+                  <label>Nhập tên phim:</label>
+                  <input id="filmName" type="text" class="form-control" />
+                </div>
+                <div class="form-group  ">
+                  <label>Nhập giá vé người lớn</label>
+                  <input id="pricePeople" type="number" class="form-control">
+                  <label>Nhập giá vé trẻ em</label>
+                  <input id="priceKid" type="number" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Số vé người lớn đã bán</label>
+                  <input id="ticketAdult" type="number" class="form-control" />
+                  <label>Số vé trẻ em đã bán</label>
+                  <input id="ticketKid" type="number" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <label class="text-center">Bạn muốn từ thiện bao nhiêu?</label>
+                  <input id="giveAway" type="number" class="form-control">
+                </div>
+                <button id="btnTinhNao" class="btn btn-primary m-3">Tính nào!</button>
+              </div>
+              <div id="footerTip" class="card-footer text-muted"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+  <footer>
+    <!-- So do 3 khoi
+    input: 
+      Tenphim:
+      Gia ve nguoi lon:
+      Gia ve tre em:
+      So ve nguoi lon da ban:
+      So ve tre em da ban:
+      Phan tram quyen gop tu thien:
+    Xu ly:
+      So ve da ban = So ve nguoi lon da ban + So ve tre em da  ban;
+      Doanh thu = (So ve nguoi lon da ban * Gia ve nguoi lon) + (So ve tre em da ban *  Gia ve tre em);
+      Tong tien trich tu thien = Doanh thu * Phan tram quyen gop tu thien;
+      Tong tien thu duoc sau tru = Doanh thu - Tong tien trich tu thien;
+    Output:
+      Xuat ra man hinh: Ten phim+ So ve da ban+ Doanh thu+ Trich % tu thien + Tong tien trich tu thien + Tong doanh thu sau tru; -->
+
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
